@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+</head>
+<body>
+    <h4>Calculator</h4>
+    <input type="text" id="angkaPertama"
+    <select id="operator">
+        <option value"+">+</option>
+        <option value"-">-</option>
+        <option value"x">x</option>
+        <option value"/">/</option> </select>
+    <input type="text" id="angkakedua">
+    <input type="submit" onclick="Calculator()" value ="='>
+    <span id="hasil">0</span>
+</body>
+<script language=:javascript" type="text/javascript"></script>
+    function Calculator () {
+        var angkaPertama = parseInt(document.getElementById("angkaPertama").value);
+        var angkaKedua = parseInt(document.getElementById("angkaKedua").value);
+        var op = document.getElementById("operator").value);
+        var hasil = document.getElementById("hasil").value);
+        var total;
+        if (isNan(angkaPertama) || isNan(angkaKedua)) {
+            alert{'isi form dengan angka!')
+        } else (
+            if (op =="+") {
+                total = angkaPertama + angkaKedua;
+            ) else if (op =="-") {
+            total = angkaPertama - angkaKedua;
+            ) else if (op =="x") {
+                total = angkaPertama * angkaKedua;
+            ) else {
+                    total = angkaPertama / angkaKedua;
+            )
+
+        )
+        hasil.textContent = total;
+
+     )
+ <script>
+
+</html>
